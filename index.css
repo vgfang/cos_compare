@@ -1,0 +1,81 @@
+* {
+  font-family: 'Trebuchet MS';
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.header{
+  margin: auto;
+}
+.boxContainer{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: start;
+}
+.topbox {
+  padding: 20px 20px 20px 20px;
+  margin: auto;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 20px 0px 20px;
+  width: 20%;
+  min-width: 334px;
+  max-width: 600px;
+}
+.displayBox{
+  display: flex;
+  flex-wrap: wrap;
+}
+.typeHighlight{
+  padding: 4px;
+  border-collapse: collapse;
+}
+.compareHighlight{
+  padding: 8px;
+  border: 1px solid black;
+}
+.activateBtn{
+  width: 120px;
+  height: 36px;
+  font-weight: bold;
+}
+.checkbox{
+  transform: scale(2);
+  margin: 0px 6px 0px 18px;
+}
+.titleInput{
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.4em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  border-style: hidden;
+  text-overflow: ellipsis;
+}
+table {
+  border-collapse: collapse;
+}
+table, th, td {
+  border: 1px solid black;
+}
+th {
+  text-align: center;
+  padding: 2px;
+  width: 60px;
+}
+td {
+  text-align: center;
+  padding: 6px;
+}
+textarea{
+  border: 1px solid black;
+}

@@ -1,0 +1,99 @@
+<html>
+<head>
+  <title>cos_compare</title>
+  <link rel="stylesheet" href="./index.css">
+  <script src="./index.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>cos_compare v1.0 - Cosmetic Ingredients Comparer</h1>
+      <p>copy and paste ingredients (separated by <em>", "</em>) from cosmetics, shampoos, soaps, etc</p>
+      <table>
+        <tr>
+          <th>Color</th>
+          <th>Meaning</th>
+          <th>Color</th>
+          <th>Meaning</th>
+          <th>Color</th>
+          <th>Meaning</th>
+          <th>Color</th>
+          <th>Meaning</th>
+          <th>Control</th>
+        </tr>
+        
+        <tr>
+          <td class="unique">
+            <input id="unique" oninput="change_color('unique')" type="color">
+          </td>
+          <td>Unique</td>
+          
+          <td class="antioxidants">
+            <input id="antioxidants" oninput="change_color('antioxidants')" type="color">
+          </td>
+          <td>Antioxidants</td>
+          
+          <td class="emollient">
+            <input id="emollient" oninput="change_color('emollient')" type="color">
+          </td>
+          <td>Emollient</td>
+          
+          <td class="ferments">
+            <input id="ferments" oninput="change_color('ferments')" type="color">
+          </td>
+          <td>Ferments</td>
+          
+        </tr>
+        
+        <tr>
+          <td class="same">
+            <input id="same" oninput="change_color('same')" type="color">
+          </td>
+          <td>Same</td>
+          
+          <td class="humectants">
+            <input id="humectants" oninput="change_color('humectants')" type="color">
+          </td>
+          <td>Humectants</td>
+          
+          <td class="plant">
+            <input id="plant" oninput="change_color('plant')" type="color">
+          </td>
+          <td>Plant</td>
+          
+          <td class="soothing">
+            <input id="soothing" oninput="change_color('soothing')" type="color">
+          </td>
+          <td>Soothing</td>
+          
+          <td colspan='2'>
+            <button class="activateBtn" onclick="reset_color()">RESET COLORS</button>
+          </td>
+        </tr>
+        
+      </table>
+    </div>
+    
+    <div class="topbox">
+      <input class="activateBtn" onclick="compare_frontend()" type="button" value="COMPARE">
+      <input id="categroriesCheckbox" class="checkbox" type="checkbox" checked>
+      <label>w/ categories</label>
+    </div>
+    
+    <div class="boxContainer">
+      <div class="box">
+        <input class="titleInput" type="text" value="list one">
+        <textarea id="oneT" placeholder="Ingredient 1, ingredient 2..."></textarea>
+        <div id="oneP" class="displayBox"></div>
+      </div>
+
+      <div class="box">
+       <input class="titleInput" type="text" value="list two">
+        <textarea id="twoT" placeholder="ingredient 1 , Ingredient 2..."></textarea>
+        <div id="twoP" class="displayBox"></div>
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>
